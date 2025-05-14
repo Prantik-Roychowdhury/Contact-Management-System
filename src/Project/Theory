@@ -1,0 +1,13 @@
+Project Structure:
+
+Real World Objects will be in Entity package
+Business logic will be written inside service package
+Controller Package:
+    1) End Points (In Spring Boot)
+    2) Main (Driver) Class
+Annotation Package for Every Custom Annotation Class
+Exception Package for all the custom exception classes
+
+FOR TOMORROW: Capgemini Personnel will be arriving
+No one will be helping you
+Do not copy from the internets
