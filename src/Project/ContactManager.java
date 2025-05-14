@@ -31,17 +31,15 @@ class ContactManager
     }
     public void searchByNumber(String number)
     {
-        boolean found = false;
         for (Contact contact : contactList)
         {
             if (contact.getPhoneNumber().contains(number))
             {
                 System.out.println(contact);
-                found = true;
+                return;
             }
         }
-        if (!found)
-            System.out.println("No contact found with that phone number.");
+        System.out.println("No contact found with that phone number.");
     }
 
     public void deleteById(int id)

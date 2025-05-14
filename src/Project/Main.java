@@ -9,13 +9,12 @@ public class Main
     public static void input()
     {
         System.out.println("Welcome to Contact Manager");
-        System.out.println("----------------------------------------------------------");
-        System.out.println("Operations:\n1) Add Contact\t2) Search by Name\n3) Delete by ID\t4) Update Contact\n5) Display Contacts");
-        System.out.println("----------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------");
+        System.out.println("Operations:\n1) Add Contact\t2) Search by Name\n3) Delete by ID\t4) Update Contact\n5) Search By Number\t6) Display All Contact");
+        System.out.println("---------------------------------------------------------------------------------------");
 
         int choice = sc.nextInt();
         sc.nextLine(); // consume newline
-
         switch (choice)
         {
             case 1:
@@ -69,6 +68,10 @@ public class Main
                 cm.updateContact(id2, newName, newNumber, newEmail);
                 break;
             case 5:
+                System.out.println("Enter Number");
+                cm.searchByNumber(sc.nextLine());
+                break;
+            case 6:
                 cm.displayAllContacts();
                 break;
             default:
